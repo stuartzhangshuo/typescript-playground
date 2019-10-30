@@ -8,7 +8,7 @@ const car = carMakers[0];
 const myCar = carMakers.pop();
 
 // prevent incompatible values
-carMakers.push(100);
+carMakers.push("100"); // putting a number 100 will trigger a ts error.
 
 // help with "map"
 carMakers.map((car: string): string => {
